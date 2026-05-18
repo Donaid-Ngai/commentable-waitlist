@@ -108,62 +108,50 @@ export default function HomePage() {
           </div>
 
           <div className="mockup-shell" aria-hidden="true">
-            <div className="browser-frame">
-              <div className="browser-bar">
-                <span />
-                <span />
-                <span />
-              </div>
+            <div className="mockup-stage">
+              <div className="page-card">
+                <div className="page-topbar">
+                  <span />
+                  <span />
+                  <span />
+                </div>
 
-              <div className="browser-content">
-                <div className="site-preview">
-                  <div className="site-nav">
-                    <div className="nav-logo" />
-                    <div className="nav-links">
-                      <span />
-                      <span />
-                      <span />
-                    </div>
+                <div className="page-body">
+                  <div className="page-kicker" />
+                  <div className="page-headline page-headline-long" />
+                  <div className="page-headline page-headline-mid" />
+                  <div className="page-copy" />
+                  <div className="page-copy page-copy-short" />
+                  <div className="page-actions">
+                    <div className="page-button selected-target" />
+                    <div className="page-button page-button-muted" />
                   </div>
-
-                  <div className="site-hero">
-                    <div className="hero-kicker" />
-                    <div className="hero-line hero-line-long" />
-                    <div className="hero-line hero-line-mid" />
-                    <div className="hero-line hero-line-copy" />
-                    <div className="hero-line hero-line-copy short" />
-
-                    <div className="focus-box focus-headline">
-                      <div className="comment-badge">1</div>
-                    </div>
-
-                    <div className="button-row">
-                      <div className="preview-button is-highlighted" />
-                      <div className="preview-button secondary" />
-                    </div>
-
-                    <div className="focus-box focus-button">
-                      <div className="comment-badge">2</div>
-                    </div>
+                  <div className="page-strip">
+                    <div className="page-tile" />
+                    <div className="page-tile" />
+                    <div className="page-tile" />
                   </div>
                 </div>
 
-                <aside className="comment-panel">
-                  <p className="panel-label">Comments</p>
-                  <div className="comment-thread">
-                    <div className="thread-targets">
-                      <span>Headline</span>
-                    </div>
-                    <p>Say this more clearly.</p>
-                  </div>
-                  <div className="comment-thread">
-                    <div className="thread-targets">
-                      <span>Primary button</span>
-                    </div>
-                    <p>Change this CTA.</p>
-                  </div>
-                </aside>
+                <div className="selection-frame selection-copy">
+                  <div className="selection-dot">1</div>
+                </div>
+
+                <div className="selection-frame selection-cta">
+                  <div className="selection-dot">2</div>
+                </div>
               </div>
+
+              <div className="floating-thread">
+                <p className="panel-label">Comment</p>
+                <div className="thread-targets">
+                  <span>Headline</span>
+                  <span>CTA</span>
+                </div>
+                <p>Make this clearer. Change this button.</p>
+              </div>
+
+              <div className="handoff-chip">Send to developer or AI</div>
             </div>
           </div>
         </motion.section>
