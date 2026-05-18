@@ -67,8 +67,8 @@ export default function HomePage() {
         </motion.p>
         <motion.h1 variants={fadeUp}>Comment on any website.</motion.h1>
         <motion.p className="lede" variants={fadeUp}>
-          Highlight the page. Leave feedback in context. Save it for your contractor or your AI
-          workflow.
+          Coordinate with your web developer. Let your AI know what you mean when you say edit
+          this.
         </motion.p>
 
         <motion.form className="waitlist-form" onSubmit={handleSubmit} variants={fadeUp}>
@@ -104,7 +104,7 @@ export default function HomePage() {
         >
           <div className="panel-copy">
             <p className="section-label">Live page review</p>
-            <h2>Click the page itself.</h2>
+            <h2>Point at the exact thing.</h2>
           </div>
 
           <div className="mockup-shell" aria-hidden="true">
@@ -128,33 +128,22 @@ export default function HomePage() {
 
                   <div className="site-hero">
                     <div className="hero-kicker" />
-                    <div className="hero-line hero-line-long is-highlighted">
-                      <div className="comment-badge">1</div>
-                    </div>
+                    <div className="hero-line hero-line-long" />
                     <div className="hero-line hero-line-mid" />
                     <div className="hero-line hero-line-copy" />
-                    <div className="hero-line hero-line-copy short is-highlighted">
-                      <div className="comment-badge">2</div>
+                    <div className="hero-line hero-line-copy short" />
+
+                    <div className="focus-box focus-headline">
+                      <div className="comment-badge">1</div>
                     </div>
 
                     <div className="button-row">
-                      <div className="preview-button is-highlighted">
-                        <div className="comment-badge">3</div>
-                      </div>
+                      <div className="preview-button is-highlighted" />
                       <div className="preview-button secondary" />
                     </div>
-                  </div>
 
-                  <div className="preview-grid">
-                    <div className="preview-card">
-                      <div className="card-line title" />
-                      <div className="card-line" />
-                      <div className="card-line short" />
-                    </div>
-                    <div className="preview-card">
-                      <div className="card-line title" />
-                      <div className="card-line" />
-                      <div className="card-line short" />
+                    <div className="focus-box focus-button">
+                      <div className="comment-badge">2</div>
                     </div>
                   </div>
                 </div>
@@ -164,15 +153,14 @@ export default function HomePage() {
                   <div className="comment-thread">
                     <div className="thread-targets">
                       <span>Headline</span>
-                      <span>CTA</span>
                     </div>
-                    <p>Clearer. Stronger. Less formal.</p>
+                    <p>Say this more clearly.</p>
                   </div>
                   <div className="comment-thread">
                     <div className="thread-targets">
-                      <span>Section copy</span>
+                      <span>Primary button</span>
                     </div>
-                    <p>Shorten this.</p>
+                    <p>Change this CTA.</p>
                   </div>
                 </aside>
               </div>
@@ -188,22 +176,22 @@ export default function HomePage() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
         >
           <motion.article className="info-card" variants={fadeUp}>
-            <p className="section-label">Stored cleanly</p>
-            <h3>Page</h3>
+            <p className="section-label">For your developer</p>
+            <h3>Stay specific.</h3>
             <ul>
-              <li>Selected elements</li>
-              <li>Saved thread</li>
-              <li>Context preserved</li>
+              <li>Comment on the exact element</li>
+              <li>Keep every note in context</li>
+              <li>Review one page together</li>
             </ul>
           </motion.article>
 
           <motion.article className="info-card" variants={fadeUp}>
-            <p className="section-label">Ready to hand off</p>
-            <h3>Next step</h3>
+            <p className="section-label">For your AI</p>
+            <h3>Be unambiguous.</h3>
             <ul>
-              <li>Send to contractor</li>
-              <li>Send to AI agent</li>
-              <li>Ship the revision</li>
+              <li>“Edit this” has a target</li>
+              <li>Comments can feed an agent</li>
+              <li>Move faster on revisions</li>
             </ul>
           </motion.article>
         </motion.section>
